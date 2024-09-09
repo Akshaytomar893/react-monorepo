@@ -46,7 +46,11 @@
     "typescript": "~5.5.2",
     "webpack-cli": "^5.1.4"
   },
-  "pathMappings": {},
+  "pathMappings": {
+    "@react-monorepo/UI": [
+      "apps/UI/src/index.ts"
+    ]
+  },
   "nxJsonPlugins": [
     {
       "name": "@nx/webpack/plugin",
@@ -72,160 +76,64 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".nx/workspace-data/d/daemon.log",
-        "hash": "6844577387772334069"
-      },
-      {
-        "file": ".nx/workspace-data/file-map.json",
-        "hash": "7609966576715186223"
-      },
-      {
-        "file": ".git/hooks/pre-merge-commit.sample",
-        "hash": "5691533144974613569"
-      },
-      {
-        "file": ".git/hooks/prepare-commit-msg.sample",
-        "hash": "4009645067798984574"
-      },
-      {
-        "file": ".git/HEAD",
-        "hash": "6460185820263248482"
-      },
-      {
-        "file": ".git/hooks/fsmonitor-watchman.sample",
-        "hash": "5519580754951798083"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "4934098906304722861"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "18315524891129148814"
-      },
-      {
-        "file": ".git/hooks/pre-applypatch.sample",
-        "hash": "1595391782482835178"
-      },
-      {
-        "file": ".git/hooks/pre-rebase.sample",
-        "hash": "15784748353859782246"
-      },
-      {
-        "file": ".git/hooks/pre-push.sample",
-        "hash": "3666369642558647280"
-      },
-      {
-        "file": ".git/hooks/sendemail-validate.sample",
-        "hash": "7660090827690999586"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "7304158403081398224"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": ".git/hooks/update.sample",
-        "hash": "14696759095365231402"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json",
-        "hash": "5410131963478230392"
-      },
-      {
-        "file": ".nx/workspace-data/jest-7930610538513362720.hash",
-        "hash": "7186821844766371823"
-      },
-      {
-        "file": ".git/hooks/push-to-checkout.sample",
-        "hash": "5194610557431485830"
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
       },
       {
         "file": ".eslintignore",
         "hash": "7663861978715868291"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "16936441711144470533"
+        "file": ".eslintrc.json",
+        "hash": "18315524891129148814"
       },
       {
-        "file": ".git/index.lock",
+        "file": ".gitignore",
         "hash": "3244421341483603138"
       },
       {
-        "file": ".git/hooks/pre-receive.sample",
-        "hash": "8999430056057037490"
-      },
-      {
-        "file": ".git/info/exclude",
-        "hash": "2084763735014985388"
-      },
-      {
-        "file": ".git/hooks/pre-commit.sample",
-        "hash": "10258126878297473471"
-      },
-      {
-        "file": ".nx/workspace-data/eslint-4393011795395336301.hash",
-        "hash": "11405732845401145453"
-      },
-      {
-        "file": ".nx/workspace-data/webpack-17957109288680152952.hash",
-        "hash": "6958134117826912692"
-      },
-      {
-        "file": ".git/description",
-        "hash": "6589616779641096119"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".git/hooks/applypatch-msg.sample",
-        "hash": "3740124940738663445"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
-      },
-      {
-        "file": ".git/config",
-        "hash": "18148943705062958044"
-      },
-      {
-        "file": "package.json",
-        "hash": "10107228730435593377"
-      },
-      {
-        "file": "azure-pipelines.yml",
-        "hash": "9373960219396857995"
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
       },
       {
         "file": ".prettierrc",
         "hash": "16267754514737964994"
       },
       {
+        "file": ".vscode/extensions.json",
+        "hash": "4934098906304722861"
+      },
+      {
         "file": "README.md",
         "hash": "4857658325415742753"
       },
       {
-        "file": ".git/hooks/commit-msg.sample",
-        "hash": "11930680668000581900"
+        "file": "azure-pipelines.yml",
+        "hash": "9373960219396857995"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
       },
       {
         "file": "nx.json",
-        "hash": "1829582503318037056"
+        "hash": "9559690091103115335"
       },
       {
-        "file": ".git/hooks/post-update.sample",
-        "hash": "16498975149454253769"
+        "file": "package-lock.json",
+        "hash": "7304158403081398224"
+      },
+      {
+        "file": "package.json",
+        "hash": "10107228730435593377"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "11109139001740299635"
       }
     ],
     "projectFileMap": {
@@ -259,7 +167,10 @@
         },
         {
           "file": "apps/authentication/src/app/app.tsx",
-          "hash": "4425185188655632697"
+          "hash": "4425185188655632697",
+          "deps": [
+            "npm:react-router-dom"
+          ]
         },
         {
           "file": "apps/authentication/src/app/nx-welcome.tsx",
@@ -308,6 +219,44 @@
             "npm:@nx/webpack",
             "npm:@nx/react"
           ]
+        }
+      ],
+      "UI": [
+        {
+          "file": "apps/UI/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "apps/UI/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/UI/README.md",
+          "hash": "7764234031122527553"
+        },
+        {
+          "file": "apps/UI/project.json",
+          "hash": "2834263435324750881"
+        },
+        {
+          "file": "apps/UI/src/index.ts",
+          "hash": "3997041745215376340"
+        },
+        {
+          "file": "apps/UI/src/lib/UI.module.scss",
+          "hash": "125145030238681982"
+        },
+        {
+          "file": "apps/UI/src/lib/UI.tsx",
+          "hash": "7177602883860478407"
+        },
+        {
+          "file": "apps/UI/tsconfig.json",
+          "hash": "14088618039610991405"
+        },
+        {
+          "file": "apps/UI/tsconfig.lib.json",
+          "hash": "15147195313780277677"
         }
       ],
       "react-monorepo": [
