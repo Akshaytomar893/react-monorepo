@@ -413,6 +413,60 @@
         "tags": [],
         "implicitDependencies": []
       }
+    },
+    "UI": {
+      "name": "UI",
+      "type": "lib",
+      "data": {
+        "root": "apps/UI",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "apps/UI",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{projectRoot}/.eslintrc.json",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "metadata": {
+              "technologies": [
+                "eslint"
+              ],
+              "description": "Runs ESLint on project",
+              "help": {
+                "command": "npx eslint --help",
+                "example": {
+                  "options": {
+                    "max-warnings": 0
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "name": "UI",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/UI/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
     }
   },
   "externalNodes": {
@@ -11919,6 +11973,11 @@
       },
       {
         "source": "authentication",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "authentication",
         "target": "npm:react",
         "type": "static"
       },
@@ -11965,6 +12024,7 @@
         "type": "static"
       }
     ],
+    "UI": [],
     "npm:@ampproject/remapping": [
       {
         "source": "npm:@ampproject/remapping",
