@@ -1,0 +1,396 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.6",
+  "deps": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.11.2",
+    "tslib": "^2.3.0",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "@nx/eslint": "19.6.6",
+    "@nx/eslint-plugin": "19.6.6",
+    "@nx/jest": "19.6.6",
+    "@nx/js": "19.6.6",
+    "@nx/react": "19.6.6",
+    "@nx/web": "19.6.6",
+    "@nx/webpack": "19.6.6",
+    "@nx/workspace": "19.6.6",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@svgr/webpack": "^8.0.1",
+    "@swc-node/register": "~1.9.1",
+    "@swc/cli": "~0.3.12",
+    "@swc/core": "~1.5.7",
+    "@swc/helpers": "~0.5.11",
+    "@testing-library/react": "15.0.6",
+    "@types/jest": "^29.5.12",
+    "@types/node": "18.16.9",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "nx": "19.6.6",
+    "prettier": "^2.6.2",
+    "react-refresh": "^0.10.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.5.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/workspace-data/d/daemon.log",
+        "hash": "6844577387772334069"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "7609966576715186223"
+      },
+      {
+        "file": ".git/hooks/pre-merge-commit.sample",
+        "hash": "5691533144974613569"
+      },
+      {
+        "file": ".git/hooks/prepare-commit-msg.sample",
+        "hash": "4009645067798984574"
+      },
+      {
+        "file": ".git/HEAD",
+        "hash": "6460185820263248482"
+      },
+      {
+        "file": ".git/hooks/fsmonitor-watchman.sample",
+        "hash": "5519580754951798083"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4934098906304722861"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "18315524891129148814"
+      },
+      {
+        "file": ".git/hooks/pre-applypatch.sample",
+        "hash": "1595391782482835178"
+      },
+      {
+        "file": ".git/hooks/pre-rebase.sample",
+        "hash": "15784748353859782246"
+      },
+      {
+        "file": ".git/hooks/pre-push.sample",
+        "hash": "3666369642558647280"
+      },
+      {
+        "file": ".git/hooks/sendemail-validate.sample",
+        "hash": "7660090827690999586"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "7304158403081398224"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": ".git/hooks/update.sample",
+        "hash": "14696759095365231402"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "5410131963478230392"
+      },
+      {
+        "file": ".nx/workspace-data/jest-7930610538513362720.hash",
+        "hash": "7186821844766371823"
+      },
+      {
+        "file": ".git/hooks/push-to-checkout.sample",
+        "hash": "5194610557431485830"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": ".git/index.lock",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".git/hooks/pre-receive.sample",
+        "hash": "8999430056057037490"
+      },
+      {
+        "file": ".git/info/exclude",
+        "hash": "2084763735014985388"
+      },
+      {
+        "file": ".git/hooks/pre-commit.sample",
+        "hash": "10258126878297473471"
+      },
+      {
+        "file": ".nx/workspace-data/eslint-4393011795395336301.hash",
+        "hash": "11405732845401145453"
+      },
+      {
+        "file": ".nx/workspace-data/webpack-17957109288680152952.hash",
+        "hash": "6958134117826912692"
+      },
+      {
+        "file": ".git/description",
+        "hash": "6589616779641096119"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".git/hooks/applypatch-msg.sample",
+        "hash": "3740124940738663445"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": ".git/config",
+        "hash": "18148943705062958044"
+      },
+      {
+        "file": "package.json",
+        "hash": "10107228730435593377"
+      },
+      {
+        "file": "azure-pipelines.yml",
+        "hash": "9373960219396857995"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "README.md",
+        "hash": "4857658325415742753"
+      },
+      {
+        "file": ".git/hooks/commit-msg.sample",
+        "hash": "11930680668000581900"
+      },
+      {
+        "file": "nx.json",
+        "hash": "1829582503318037056"
+      },
+      {
+        "file": ".git/hooks/post-update.sample",
+        "hash": "16498975149454253769"
+      }
+    ],
+    "projectFileMap": {
+      "authentication": [
+        {
+          "file": "apps/authentication/.babelrc",
+          "hash": "13020124393823981135"
+        },
+        {
+          "file": "apps/authentication/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/authentication/jest.config.ts",
+          "hash": "12293096407157474495"
+        },
+        {
+          "file": "apps/authentication/project.json",
+          "hash": "11262271126568553366"
+        },
+        {
+          "file": "apps/authentication/src/app/app.module.scss",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/authentication/src/app/app.spec.tsx",
+          "hash": "59876339236121659",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/authentication/src/app/app.tsx",
+          "hash": "4425185188655632697"
+        },
+        {
+          "file": "apps/authentication/src/app/nx-welcome.tsx",
+          "hash": "14708174282304233720"
+        },
+        {
+          "file": "apps/authentication/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/authentication/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/authentication/src/index.html",
+          "hash": "16024237294079358785"
+        },
+        {
+          "file": "apps/authentication/src/main.tsx",
+          "hash": "763379880219152615",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/authentication/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/authentication/tsconfig.app.json",
+          "hash": "15147195313780277677"
+        },
+        {
+          "file": "apps/authentication/tsconfig.json",
+          "hash": "9850153468027031608"
+        },
+        {
+          "file": "apps/authentication/tsconfig.spec.json",
+          "hash": "11378287594513225419"
+        },
+        {
+          "file": "apps/authentication/webpack.config.js",
+          "hash": "1664727502516295620",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:@nx/react"
+          ]
+        }
+      ],
+      "react-monorepo": [
+        {
+          "file": "apps/react-monorepo/.babelrc",
+          "hash": "13020124393823981135"
+        },
+        {
+          "file": "apps/react-monorepo/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/react-monorepo/jest.config.ts",
+          "hash": "7122360828620116055"
+        },
+        {
+          "file": "apps/react-monorepo/project.json",
+          "hash": "5239079782642021154"
+        },
+        {
+          "file": "apps/react-monorepo/src/app/app.module.scss",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/react-monorepo/src/app/app.spec.tsx",
+          "hash": "1755493259770506476",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/react-monorepo/src/app/app.tsx",
+          "hash": "9262872664126437512"
+        },
+        {
+          "file": "apps/react-monorepo/src/app/nx-welcome.tsx",
+          "hash": "18190752550141278554"
+        },
+        {
+          "file": "apps/react-monorepo/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/react-monorepo/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/react-monorepo/src/index.html",
+          "hash": "12728266045413355218"
+        },
+        {
+          "file": "apps/react-monorepo/src/main.tsx",
+          "hash": "4731961929376199421",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/react-monorepo/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/react-monorepo/tsconfig.app.json",
+          "hash": "15147195313780277677"
+        },
+        {
+          "file": "apps/react-monorepo/tsconfig.json",
+          "hash": "9850153468027031608"
+        },
+        {
+          "file": "apps/react-monorepo/tsconfig.spec.json",
+          "hash": "11378287594513225419"
+        },
+        {
+          "file": "apps/react-monorepo/webpack.config.js",
+          "hash": "13423058170305205146",
+          "deps": [
+            "npm:@nx/webpack",
+            "npm:@nx/react"
+          ]
+        }
+      ]
+    }
+  }
+}
