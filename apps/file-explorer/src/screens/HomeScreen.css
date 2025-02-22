@@ -1,0 +1,12 @@
+.homescreen {
+  display: flex;
+  flex-direction: row;
+}
+.leftSection {
+  flex: 2;
+  border-right: 2px solid black;
+  padding: 1rem;
+}
+.rightSection {
+  flex: 7;
+}
